@@ -1,12 +1,12 @@
-##GameMechanics.cpp
+## GameMechanics.cpp
 
-[INFO: QWIRKLE - a how to](https://www.youtube.com/watch?v=Hp3IwPbZYSE)
+[what is QWIRKLE?](https://www.youtube.com/watch?v=Hp3IwPbZYSE)
 
 GameMechanics place in Qwirkle is the ‘guard at the gates.’ - The rules of the game -
 
 >The approach to this class was to keep it as encapsulated as possible with minimal handling of memory. As such it’s role is not to change state or variable information but to simply offer answers to questions that were specific to the game’s rules.
 
-####At bare minimum the class offers three accessible methods
+#### At bare minimum the class offers three accessible methods
 * `bool checkPosition()`
 Alerts gameplay whether or not a placement is legal
 * `bool isQwirkle()`
@@ -21,7 +21,7 @@ Returns gameplay all points gained in the single move
 
 All methods take the same arguments, Tile to be place, Desired Position and a Placed Tiles List of all tiles and their positions legally placed on the board. 
 
-####Some arguments utilised specific typedefs such as:
+#### Some arguments utilised specific typedefs such as:
 * `PosPtr` (a pointer to a board position, which also stored the set tile). 
 * `PosVec` (A vector of board position pointers)
 
@@ -34,6 +34,6 @@ Entering milestone 3 it was useful to utilise GameMechanics code to search all p
 
 Reusing GameMechanics methods the method was able to find the optimum position and return a PosPtr → BoardPosition that held the position and tile.
 
-####Test Cases
+#### Test Cases
 
 Test cases run for GameMechanics were focused on boundary placements, complicated tile insertion and non-repeatable placements, within a line or adjacent moves.
